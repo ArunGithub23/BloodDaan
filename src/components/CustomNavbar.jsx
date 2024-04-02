@@ -62,6 +62,14 @@ export default function CustomNavbar(props) {
                 <Nav.Link>Blood Collection</Nav.Link>
               </LinkContainer>
             )}
+             {url === "home" && (
+              <>
+                <LinkContainer to="/login-track">
+                  <Nav.Link>Track</Nav.Link>
+                </LinkContainer>
+               
+              </>
+            )}
             {url === "home" && (
               <>
                 {/* <LinkContainer to="/login-track">
@@ -79,7 +87,9 @@ export default function CustomNavbar(props) {
                 </Button>
               </LinkContainer>
             )}
-          </Nav>
+           
+            
+                      </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
